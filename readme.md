@@ -10,3 +10,60 @@ A script to play gifs in terminal.
 Keeping the terminal font size less and specifying higher height argument yeilds in a clearer output.
 
 Refer the documentation for more information.
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module main</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>main</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:e%3A%5Cpy%5Cpy%5Cgifnconsole%5Cmain.py">e:\py\py\gifnconsole\main.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="PIL.Image.html">PIL.Image</a><br>
+<a href="PIL.ImageSequence.html">PIL.ImageSequence</a><br>
+</td><td width="25%" valign=top><a href="email.mime.image.html">email.mime.image</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-render_image"><strong>render_image</strong></a>(path: str, delay_ms: int, height: int, width=None) -&gt; None</dt><dd><tt>Plays&nbsp;the&nbsp;gif&nbsp;for&nbsp;infinite&nbsp;time.&nbsp;BLOCKING.<br>
+&nbsp;<br>
+Arguments:<br>
+path:&nbsp;(required)&nbsp;The&nbsp;path&nbsp;of&nbsp;the&nbsp;image&nbsp;(gif/jpg).<br>
+&nbsp;<br>
+delay_ms:&nbsp;(required)&nbsp;The&nbsp;delay&nbsp;between&nbsp;two&nbsp;consecutive&nbsp;frames&nbsp;of&nbsp;the&nbsp;gif.<br>
+&nbsp;<br>
+height:&nbsp;(required)&nbsp;The&nbsp;specified&nbsp;gif&nbsp;is&nbsp;resized&nbsp;to&nbsp;this&nbsp;height.<br>
+&nbsp;<br>
+width:&nbsp;(optional)&nbsp;The&nbsp;specified&nbsp;gif&nbsp;is&nbsp;resized&nbsp;to&nbsp;this&nbsp;width.<br>
+If&nbsp;width&nbsp;is&nbsp;not&nbsp;specified,&nbsp;it&nbsp;is&nbsp;calculated&nbsp;so&nbsp;as&nbsp;to&nbsp;maintain&nbsp;the&nbsp;aspect&nbsp;ratio.<br>
+&nbsp;<br>
+Usage&nbsp;example:&nbsp;render_gif("aqua2.gif",delay_ms=100,height=30)</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>l</strong> = ['█', '■', '@', '#']</td></tr></table>
+</body></html>
