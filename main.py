@@ -7,10 +7,10 @@ import time
 
 l=[r'█',u"\u25A0","@","#"]
 
-def render_gif(path:str,delay_ms:int,height:int,width=None)->None:
+def render_image(path:str,delay_ms:int,height:int,width=None)->None:
     """Plays the gif for infinite time. BLOCKING.\n
         Arguments:
-        path: (required) The path of the gif.\n
+        path: (required) The path of the image (gif/jpg).\n
         delay_ms: (required) The delay between two consecutive frames of the gif.\n
         height: (required) The specified gif is resized to this height.\n
         width: (optional) The specified gif is resized to this width.
@@ -28,6 +28,7 @@ def render_gif(path:str,delay_ms:int,height:int,width=None)->None:
     if width:
         frame_width=width
     frames=[]
+
     for frame in ImageSequence.Iterator(imageObj):
         frame=frame.convert('RGB').resize((frame_width,frame_height)).copy()
         frame=np.asarray(frame)
@@ -42,13 +43,16 @@ def render_gif(path:str,delay_ms:int,height:int,width=None)->None:
                 output_frame+="\033[38;2;{};{};{}m".format(pixel[0],pixel[1],pixel[2])+"#"+"\033[0m"
             output_frame+="\n"
         output_frames.append(output_frame)
-
+    if len(output_frames)==1:
+        sys.stdout.write(output_frames[0])
+        return
     while True:
         for frame in output_frames:
             sys.stdout.write(frame)
             time.sleep(delay_ms/1000)
             os.system("cls")
+            #time.sleep(20e-3)
             
 
 if __name__=='__main__':
-    render_gif("aqua2.gif",delay_ms=100,height=30)
+    render_image("aqua3.gif",delay_ms=100,height=40)
