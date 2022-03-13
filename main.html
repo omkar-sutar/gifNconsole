@@ -31,10 +31,10 @@
 <font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
     
 <tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><dl><dt><a name="-render_gif"><strong>render_gif</strong></a>(path: str, delay_ms: int, height: int, width=None) -&gt; None</dt><dd><tt>Plays&nbsp;the&nbsp;gif&nbsp;for&nbsp;infinite&nbsp;time.&nbsp;BLOCKING.<br>
+<td width="100%"><dl><dt><a name="-render_image"><strong>render_image</strong></a>(path: str, delay_ms: int, height: int, width=None) -&gt; None</dt><dd><tt>Plays&nbsp;the&nbsp;gif&nbsp;for&nbsp;infinite&nbsp;time.&nbsp;BLOCKING.<br>
 &nbsp;<br>
 Arguments:<br>
-path:&nbsp;(required)&nbsp;The&nbsp;path&nbsp;of&nbsp;the&nbsp;gif.<br>
+path:&nbsp;(required)&nbsp;The&nbsp;path&nbsp;of&nbsp;the&nbsp;image&nbsp;(gif/jpg).<br>
 &nbsp;<br>
 delay_ms:&nbsp;(required)&nbsp;The&nbsp;delay&nbsp;between&nbsp;two&nbsp;consecutive&nbsp;frames&nbsp;of&nbsp;the&nbsp;gif.<br>
 &nbsp;<br>
@@ -43,7 +43,7 @@ height:&nbsp;(required)&nbsp;The&nbsp;specified&nbsp;gif&nbsp;is&nbsp;resized&nb
 width:&nbsp;(optional)&nbsp;The&nbsp;specified&nbsp;gif&nbsp;is&nbsp;resized&nbsp;to&nbsp;this&nbsp;width.<br>
 If&nbsp;width&nbsp;is&nbsp;not&nbsp;specified,&nbsp;it&nbsp;is&nbsp;calculated&nbsp;so&nbsp;as&nbsp;to&nbsp;maintain&nbsp;the&nbsp;aspect&nbsp;ratio.<br>
 &nbsp;<br>
-Usage&nbsp;example:&nbsp;<a href="#-render_gif">render_gif</a>("aqua2.gif",delay_ms=100,height=30)</tt></dd></dl>
+Usage&nbsp;example:&nbsp;render_gif("aqua2.gif",delay_ms=100,height=30)</tt></dd></dl>
 </td></tr></table><p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#55aa55">
